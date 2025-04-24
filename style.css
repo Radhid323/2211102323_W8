@@ -1,18 +1,18 @@
 body {
-  background: linear-gradient(180deg, #9b59b6 0%, #3498db 100%); /* Gradasi ungu ke biru yang cerah */
+  background: linear-gradient(180deg, #9b59b6 0%, #3498db 100%);
   color: #f7f7f7;
   font-family: 'Noto Sans JP', sans-serif;
-  min-height: 100vh; /* Pastikan tinggi badan memenuhi layar */
-  margin: 0; /* Menghapus margin default */
+  min-height: 100vh; 
+  margin: 0;
 }
 
 .container {
   position: relative;
   z-index: 2;
   padding: 50px 20px;
-  background: linear-gradient(180deg, #8e44ad 0%, #6c3483 100%); /* Gradasi untuk konten */
+  background: linear-gradient(180deg, #8e44ad 0%, #6c3483 100%); 
   border-radius: 15px;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan lebih lembut */
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .judul,
@@ -27,7 +27,7 @@ body {
   margin: 30px auto;
   padding: 15px;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.6); /* Background cerpen lebih transparan */
+  background-color: rgba(0, 0, 0, 0.6);
   width: 80%;
   display: none;
   font-size: 1.2em;
@@ -85,7 +85,7 @@ body {
 
 .btn-custom {
   margin-top: 30px;
-  background: linear-gradient(135deg, #e74c3c, #c0392b); /* Gradasi untuk tombol yang lebih cerah */
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
   color: white;
   border: none;
   padding: 12px 30px;
@@ -96,9 +96,9 @@ body {
 }
 
 .btn-custom:hover {
-  background: linear-gradient(135deg, #c0392b, #e74c3c); /* Gradasi terbalik pada hover */
+  background: linear-gradient(135deg, #c0392b, #e74c3c);
   transform: scale(1.1);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Efek bayangan lebih dramatis */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 #alertBox {
