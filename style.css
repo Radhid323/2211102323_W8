@@ -1,0 +1,116 @@
+body {
+  background: linear-gradient(180deg, #9b59b6 0%, #3498db 100%); /* Gradasi ungu ke biru yang cerah */
+  color: #f7f7f7;
+  font-family: 'Noto Sans JP', sans-serif;
+  min-height: 100vh; /* Pastikan tinggi badan memenuhi layar */
+  margin: 0; /* Menghapus margin default */
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  padding: 50px 20px;
+  background: linear-gradient(180deg, #8e44ad 0%, #6c3483 100%); /* Gradasi untuk konten */
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan lebih lembut */
+}
+
+.judul,
+.nama-nim,
+.btn-alert {
+  text-align: center;
+  margin-top: 20px;
+  color: #f7f7f7;
+}
+
+.paragraf-cerpen {
+  margin: 30px auto;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.6); /* Background cerpen lebih transparan */
+  width: 80%;
+  display: none;
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+#petal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.petal {
+  position: absolute;
+  width: 14px;
+  height: 20px;
+  background-color: #ffb6c1;
+  border-radius: 60% 40% 60% 40% / 70% 60% 40% 50%;
+  opacity: 0.9;
+  animation: fall 6s linear infinite;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+}
+
+.hide-cerpen {
+  animation: slideUp 1s forwards;
+}
+
+.btn-custom {
+  margin-top: 30px;
+  background: linear-gradient(135deg, #e74c3c, #c0392b); /* Gradasi untuk tombol yang lebih cerah */
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-custom:hover {
+  background: linear-gradient(135deg, #c0392b, #e74c3c); /* Gradasi terbalik pada hover */
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Efek bayangan lebih dramatis */
+}
+
+#alertBox {
+  display: none;
+  padding: 10px 15px;
+  font-size: 0.9em;
+  width: auto;
+  max-width: 300px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.cerpen-wrapper {
+  transition: all 0.5s ease;
+}
